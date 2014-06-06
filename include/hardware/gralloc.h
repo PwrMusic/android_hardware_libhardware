@@ -101,7 +101,7 @@ enum {
     GRALLOC_USAGE_HW_CAMERA_ZSL         = 0x00060000,
     /* mask for the camera access values */
     GRALLOC_USAGE_HW_CAMERA_MASK        = 0x00060000,
-#ifdef BOARD_USES_PVR
+#ifdef USES_PVR_GPU
     GRALLOC_USAGE_HW_FB_PHY_LINEAR      = 0x00008000,
 #endif
     /* mask for the software usage bit-mask */
@@ -130,7 +130,7 @@ enum {
     GRALLOC_USAGE_PRIVATE_3             = 0x80000000,
     GRALLOC_USAGE_PRIVATE_MASK          = 0xF0000000,
     
-#ifdef BOARD_USES_PVR
+#ifdef USES_PVR_GPU
     GRALLOC_USAGE_INTERNAL_ONLY         = 0x10000000,
     GRALLOC_USAGE_EXTERNAL_FLEXIBLE     = 0x20000000,
     GRALLOC_USAGE_EXTERNAL_BLOCK        = 0x40000000,
